@@ -6,7 +6,7 @@ Ask pattern in akka. Note that the results returned are for the past 1hr.
 
 Both the `Aggregator` and `Request-Response with ask from outside an Actor` logic has been retrieved from the [Interaction Patterns docs](https://doc.akka.io/docs/akka/current/typed/interaction-patterns.html#request-response-with-ask-between-two-actors).
 
-##Running the app
+# Running the app
 Using the maven commaned below will build and deploy the project:
 
 ```./mvnw spring-boot:run```
