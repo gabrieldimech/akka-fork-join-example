@@ -2,7 +2,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -13,11 +12,10 @@
     <artifactId>akka-fork-join-example</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>akka-fork-join-example</name>
-    <description>Demo project for Spring Boot</description>
+    <description>Akka fork join example</description>
     <properties>
         <akka.version>2.6.15</akka.version>
         <scala.binary.version>2.13</scala.binary.version>
-
         <java.version>11</java.version>
     </properties>
     <dependencies>
@@ -95,7 +93,6 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-
                 <groupId>com.typesafe.akka</groupId>
                 <artifactId>akka-bom_${scala.binary.version}</artifactId>
                 <version>2.6.15</version>
@@ -107,14 +104,6 @@
     <build>
         <plugins>
             <plugin>
-                <configuration>
-                    <appName>akka-fork-join-example</appName>
-                </configuration>
-                <groupId>com.heroku.sdk</groupId>
-                <artifactId>heroku-maven-plugin</artifactId>
-                <version>3.0.3</version>
-            </plugin>
-            <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
@@ -123,8 +112,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.5.1</version>
                 <configuration>
-                    <source>9</source>
-                    <target>9</target>
+                    <source>11</source>
+                    <target>11</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -135,7 +124,7 @@
                     <executable>java</executable>
                     <arguments>
                         <argument>-classpath</argument>
-                        <classpath/>
+                        <classpath />
                         <argument>com.example.AkkaQuickstart</argument>
                     </arguments>
                 </configuration>
