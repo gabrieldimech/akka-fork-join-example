@@ -3,7 +3,7 @@ package com.news.controllers;
 import akka.actor.typed.ActorRef;
 import akka.actor.typed.ActorSystem;
 import akka.actor.typed.javadsl.AskPattern;
-import com.dto.NewsItemsRequestDto;
+import com.news.dto.NewsItemsRequestDto;
 import com.news.actors.AggregatorTrigger;
 import com.news.entities.NewsItem;
 import com.news.services.GoogleNewsService;
