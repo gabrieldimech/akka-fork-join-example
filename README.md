@@ -14,7 +14,7 @@ Using the maven commaned below will build and deploy the project:
 # Endpoints
 ## Get news for topics 
 Accepts a colelcion of topics and returns a JSON response with news items for each topic.
-###POST localhost:8080/news
+### POST localhost:8080/news
 Request Payload example:
 
 ```
