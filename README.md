@@ -14,6 +14,9 @@ Using the maven commaned below will build and deploy the project:
 # Endpoints
 ## Get news for topics 
 Accepts a colelcion of topics and returns a JSON response with news items for each topic.
+
+The demo ednpoint is available to test [here] (https://ancient-river-40675.herokuapp.com/news).
+
 ### POST localhost:8080/news
 Request Payload example:
 
